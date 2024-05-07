@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class PostIndex extends Component
 {
-    public $appName, $posts;
+    public $appName;
 
     public function __construct()
     {

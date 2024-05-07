@@ -1,6 +1,9 @@
 <div class="row">
     <div class="col-md-6">
-        <form class="row g-3" wire:submit='update' enctype="multipart/form-data">
+        <a href="{{ route('posts.index') }}" wire:navigate class="text-decoration-none text-light"><i
+                class="bi bi-arrow-left"></i>&nbsp;&nbsp;Back</a>
+
+        <form class="row g-3 mt-2" wire:submit='update' enctype="multipart/form-data">
             <div class="col-12">
                 <textarea wire:model='body' class="form-control" rows="5" aria-describedby="validationBodyFeedback"
                     placeholder="What's on your mind ?">{{ $body }}</textarea>
